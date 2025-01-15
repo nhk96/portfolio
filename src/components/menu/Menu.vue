@@ -9,15 +9,23 @@
                 efficiency.</div>
         </div>
         <div class="quick-links">
-            <a href="#experiences" @click.prevent="scrollToSection('experiences')">Experiences</a>
-            <a href="#education" @click.prevent="scrollToSection('education')">Educations</a>
-            <a href="#skill" @click.prevent="scrollToSection('skill')">Skills</a>
+            <a v-for="link in quickLinks" :key="link.id" :href="link.href" @click.prevent="scrollToSection(link.id)">
+                {{ link.text }}
+            </a>
         </div>
-
     </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
+const quickLinks = ref([
+    { id: 'experiences', href: '#experiences', text: 'Experiences' },
+    { id: 'education', href: '#education', text: 'Educations' },
+    { id: 'skill', href: '#skill', text: 'Skills & Tools' },
+    { id: 'project', href: '#project', text: 'Projects' }
+]);
+
 function scrollToSection(id: string) {
     const element = document.getElementById(id);
     if (element) {
@@ -38,11 +46,8 @@ function scrollToSection(id: string) {
     padding: 2rem;
 
     .introduction {
-        text-align: center;
         display: flex;
         flex-direction: column;
-
-
 
         .title {
             font-family: var(--primary-font);
@@ -52,7 +57,6 @@ function scrollToSection(id: string) {
 
         .subtitle {
             font-family: var(--secondary-font);
-
         }
 
         .description {
@@ -64,12 +68,12 @@ function scrollToSection(id: string) {
     }
 
     .quick-links {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         gap: 0.25rem;
+        justify-content: flex-start;
 
         a {
-            width: 100%;
             font-family: var(--secondary-font);
             font-size: 1rem;
             color: light-dark(#000, #fff);
@@ -88,9 +92,7 @@ function scrollToSection(id: string) {
             }
         }
     }
-
 }
-
 
 @media (max-width: 768px) {
     .menu {
