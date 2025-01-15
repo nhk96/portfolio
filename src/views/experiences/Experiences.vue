@@ -27,6 +27,8 @@ const experiences = [
         duration: 'March 2020 - Present',
         descriptions: [
             'Led a small team of developers in the development and design of custom React.js and Vue.js components to meet client and user requirements effectively.',
+            'Liasing with clients to understand their requirements and provide solutions to their problems.',
+            'Created some tools to help the team to be more productive and efficient.',
             'Managed the creation of responsive web pages ensuring compatibility across various devices and browsers.',
             'Utilized Adobe Photoshop and Figma to modify and integrate design materials into product development.',
             'Collaborated closely with QA team to address user-reported tickets, providing precise solutions.',

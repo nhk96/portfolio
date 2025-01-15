@@ -22,6 +22,8 @@ import Skills from '@/views/Skills/Skills.vue';
     overflow: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
 
 }
 
