@@ -51,6 +51,14 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+@media screen and (max-width: 768px) {
+    .cursor {
+        display: none;
+    }
+
+}
+
+
 .cursor {
     position: fixed;
     width: 1.125rem;
@@ -59,8 +67,9 @@ onUnmounted(() => {
     /* 1.5rem * 0.75 */
     border-radius: 50%;
     border: solid 1px red;
+    background: rgba(255, 0, 0, 0.25);
     pointer-events: none;
-    z-index: 9999;
+    z-index: 999;
     transition: transform 0.1s, border-width 0.1s, width 0.1s, height 0.1s;
     transform: translate(-50%, -50%);
 }

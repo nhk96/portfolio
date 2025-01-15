@@ -36,7 +36,7 @@ a{
 * {
   scrollbar-width: none; /* Hide scrollbar */
   -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
-  cursor: none !important;
+  cursor: none ;
 }
 
 /*

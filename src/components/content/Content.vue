@@ -4,13 +4,15 @@
         <Experiences />
         <Education />
         <Skills />
+        <Project />
     </div>
 </template>
 
 <script setup lang="ts">
-import Experiences from '@/views/Experiences/Experiences.vue';
-import Education from '@/views/Education/Education.vue';
-import Skills from '@/views/Skills/Skills.vue';
+import Experiences from '@/views/experiences/Experiences.vue';
+import Education from '@/views/education/Education.vue';
+import Skills from '@/views/skills/Skills.vue';
+import Project from '@/views/projects/Project.vue';
 
 </script>
 

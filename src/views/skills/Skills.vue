@@ -42,7 +42,7 @@ interface Skillset {
 interface SkillCategory {
     skill: string;
     skillsets: Skillset[];
-    source: string;
+    source?: string;
 }
 
 const skillList: SkillCategory[] = [
@@ -54,11 +54,12 @@ const skillList: SkillCategory[] = [
             { name: 'JavaScript (Vanilla)', progress: 50, invalid: true },
             { name: 'VueJs', progress: 50, invalid: true },
             { name: 'ReactJs', progress: 50, invalid: true },
+            { name: 'Flutter', progress: 50, invalid: true },
             { name: 'Git', progress: 50, invalid: true },
             { name: 'CI/CD', progress: 50, invalid: true },
 
         ],
-        source: "I can't really give myself a score since I'm still learning and improving."
+
     },
     {
         skill: 'Soft Skill(s)',
@@ -70,7 +71,7 @@ const skillList: SkillCategory[] = [
             { name: 'Productivity', progress: 80 },
             { name: 'Adaptability', progress: 80 },
         ],
-        source: 'Scores are based on <a href="https://drive.google.com/file/d/1cotnSdRKS0zIOy3IA7ncsP1qNCAbqy57/view?usp=sharing" target="_blank">performance evaluation of year 2024</a>.'
+        source: '<a href="https://drive.google.com/file/d/1cotnSdRKS0zIOy3IA7ncsP1qNCAbqy57/view?usp=sharing" target="_blank">Performance evaluation of year 2024</a>.'
     },
 ];
 
@@ -91,7 +92,10 @@ const toolsets = [
         name: 'VSCode',
         logo: 'https://media.licdn.com/dms/image/v2/D4D12AQHV7to6hMRPUg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1715455222364?e=2147483647&v=beta&t=fMajdXUMNcvoBZ6DCF3hN4tZJATei2dSJyTJ6zVfJGQ'
     },
-
+    {
+        name: 'Atlassian SourceTree',
+        logo: 'https://wac-cdn.atlassian.com/dam/jcr:51aa63f9-8e33-4177-8ef9-54b4bdb09a69/sourcetree_rgb_darkblue_atlassian_1200x630.png'
+    },
     {
         name: 'GitHub Copilot',
         logo: 'https://assets.bitdegree.org/images/github-copilot-review-logo-square.png?tr=w-250'
@@ -140,6 +144,7 @@ const toolsets = [
         .skill-list {
             display: grid;
             grid-template-columns: 30% 1fr;
+            grid-template-columns: repeat(4, 1fr);
             width: 100%;
             gap: 0.25rem 0.5rem;
         }
@@ -179,6 +184,7 @@ const toolsets = [
         align-items: center;
         background: #bbbbbb;
         border-radius: 0.25rem;
+        display: none;
 
         .progress-bar {
             height: 100%;
@@ -186,7 +192,11 @@ const toolsets = [
             background: #212121;
 
             &.invalid {
-                background: red;
+                background: repeating-linear-gradient(45deg,
+                        black,
+                        black 5px,
+                        #f6c800 5px,
+                        #f6c800 10px);
             }
         }
     }

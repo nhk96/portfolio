@@ -25,9 +25,9 @@ const education = [
     },
     {
         title: 'High School Diploma',
-        institution: 'Example High School',
-        location: 'Example Town',
-        duration: 'September 2011 - June 2015',
+        institution: 'Asia Pacific University',
+        location: 'Bukit Jalil, Malaysia',
+        duration: 'September 2014 - June 2016',
         cgpa: '2.90'
     }
 ];
