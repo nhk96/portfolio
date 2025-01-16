@@ -54,7 +54,7 @@ const projects = [
         link: [
             {
                 title: 'GitHub',
-                url: ''
+                url: 'https://github.com/nhk96/py-translate'
             }
         ],
     },
@@ -74,7 +74,7 @@ const projects = [
         link: [
             {
                 title: 'Download',
-                url: ''
+                url: 'https://drive.google.com/drive/folders/1nEe6wv9dm998RZO6AqQtdpwI_VC4I7rn?usp=sharing'
             }
         ],
         noFurtherInfo: true
@@ -85,7 +85,7 @@ const projects = [
         link: [
             {
                 title: 'Download',
-                url: ''
+                url: 'https://drive.google.com/file/d/1ACpvdSYYU7bVnb4pda0Ayl50fZKtu8fi/view?usp=sharing'
             }
         ],
         noFurtherInfo: true
@@ -96,7 +96,7 @@ const projects = [
         link: [
             {
                 title: 'Download',
-                url: ''
+                url: 'https://drive.google.com/drive/folders/1jTPghsnuYG47RxhzNFCt6QdE6CVnvv5I?usp=sharing'
             }
         ],
         noFurtherInfo: true
@@ -107,7 +107,7 @@ const projects = [
         link: [
             {
                 title: 'Download',
-                url: ''
+                url: 'https://drive.google.com/file/d/1s43ZBWsjKJ4u9pXG8kR-8m7YFrFMqpJ_/view?usp=sharing'
             }
         ],
         noFurtherInfo: true
@@ -118,7 +118,7 @@ const projects = [
         link: [
             {
                 title: 'Download',
-                url: ''
+                url: 'https://drive.google.com/file/d/14YHvIa7w0sPJG8-TlCrfEEGdLJp2RoiD/view?usp=sharing'
             }
         ],
         noFurtherInfo: true
